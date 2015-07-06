@@ -21,6 +21,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 })
 
+.controller('ListController', ['$scope', '$http', function($scope, $http) {
+  $http.get('http://localhost:3000/movie').success(function(data) {
+    console.log(data);
+    $scope.movies = data;
+  })
+}])
+
 .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
