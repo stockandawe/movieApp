@@ -1,1 +1,14 @@
 /* Empty. Add your own CSS if you like */
+.splash {
+  background: url("http://placehold.it/380x600") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.branding {
+  width: 50%;
+  margin: 0 auto;
+  
+}
